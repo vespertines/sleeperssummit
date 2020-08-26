@@ -1,32 +1,25 @@
 {
-    "name": "Sleepers Summit",
-    "version": "1.0.0",
-    "author": "Kwang-Su Kim",
-    "devDependencies": {
-        "@wordpress/scripts": "^12.1.0",
-        "dir-archiver": "^1.1.1",
-        "node-sass": "^4.14.1",
-        "rtlcss": "^2.5.0"
-    },
-    "rtlcssConfig": {
-        "options": {
-            "autoRename": false,
-            "autoRenameStrict": false,
-            "blacklist": {},
-            "clean": true,
-            "greedy": false,
-            "processUrls": false,
-            "stringMap": []
-        },
-        "plugins": [],
-        "map": false
-    },
-    "scripts": {
-        "watch": "node-sass sass/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
-        "compile:css": "node-sass sass/ -o ./ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
-        "compile:rtl": "rtlcss style.css style-rtl.css",
-        "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
-        "lint:js": "wp-scripts lint-js 'js/*.js'",
-        "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map"
-    }
+  "name": "olympos-gulp",
+  "version": "1.0.0",
+  "description": "Gulp dependencies for Olympos WordPress theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivandoric/olympos.git"
+  },
+  "author": "Ivan Dorić",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-pngquant": "^4.2.0"
+  }
 }

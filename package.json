@@ -1,25 +1,77 @@
 {
-  "name": "olympos-gulp",
+  "name": "blank-theme",
+  "description": "A starter-kit for WordPress themes",
   "version": "1.0.0",
-  "description": "Gulp dependencies for Olympos WordPress theme",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Olivier Guilleux",
+  "authorURI": "https://www.olivier-guilleux.com",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ivandoric/olympos.git"
+    "url": "git://github.com/oguilleux/webpack-gulp-wordpress-starter-theme.git"
   },
-  "author": "Ivan Dorić",
-  "license": "ISC",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "gulp"
+  ],
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "postinstall": "gulp build && echo \"THEME INSTALLED, GOOD TO GO !\""
+  },
+  "engines": {
+    "node": ">=5.0.0"
+  },
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.0.2",
-    "gulp-imagemin": "^2.3.0",
-    "gulp-livereload": "^3.8.0",
-    "gulp-sass": "^2.0.4",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglifyjs": "^0.6.2",
-    "imagemin-pngquant": "^4.2.0"
+    "ansi-colors": "4.1.1",
+    "autoprefixer": "9.8.6",
+    "babel-core": "6.26.3",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "7.1.5",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-preset-env": "1.7.0",
+    "browser-sync": "^2.26.12",
+    "cssnano": "4.1.10",
+    "del": "5.1.0",
+    "eslint": "7.7.0",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-loader": "4.0.2",
+    "eslint-plugin-babel": "5.3.1",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-react": "7.20.6",
+    "eslint-plugin-react-hooks": "4.1.0",
+    "fancy-log": "1.3.3",
+    "gulp": "^4.0.2",
+    "gulp-add": "0.1.0",
+    "gulp-autoprefixer": "7.0.1",
+    "gulp-filter": "6.0.0",
+    "gulp-imagemin": "7.1.0",
+    "gulp-insert": "0.5.0",
+    "gulp-notify": "3.2.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-sourcemaps": "2.6.5",
+    "gulp-svg-sprite": "1.5.0",
+    "gulp-svgmin": "3.0.0",
+    "lodash": "4.17.20",
+    "map-stream": "0.0.7",
+    "merge-stream": "2.0.0",
+    "node-notifier": "8.0.0",
+    "prettier": "2.1.1",
+    "supports-color": "7.1.0",
+    "terser-webpack-plugin": "4.1.0",
+    "vinyl-named": "1.1.0",
+    "webpack": "4.44.1",
+    "webpack-stream": "5.2.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.26.0",
+    "bootstrap": "4.5.2",
+    "breakpoint-sass": "2.7.1",
+    "breakpoint-slicer": "2.0.0",
+    "jquery": "3.5.1",
+    "popper.js": "1.16.1"
   }
 }

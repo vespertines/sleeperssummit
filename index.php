@@ -1,9 +1,28 @@
-<?php get_header(); ?>
+<?php
+get_header();
+?>
 
-	<h1>Welcome to Olympos theme.</h1>
-    <p>
-        You can delete this text in index.php
-    </p>
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
 
-    
-<?php get_footer(); ?>
+	        <?php
+	        while(have_posts()) : the_post();
+		        ?>
+
+                <section>
+			        <?php the_title('<h1>', '</h1>'); ?>
+
+			        <?php
+			        the_content();
+			        ?>
+                </section>
+
+		        <?php
+	        endwhile; // End of the loop.
+	        ?>
+
+        </main><!-- #main -->
+    </div><!-- #primary -->
+
+<?php
+get_footer();

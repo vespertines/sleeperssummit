@@ -1,4 +1,3 @@
-
 /**
  * Colors
  *
@@ -12,10 +11,10 @@
  * @see https://github.com/lolmaus/breakpoint-slicer
  */
 $slicer-breakpoints-settings: true;
-@if ( $slicer-breakpoints-settings == true ) {
-  $slicer-breakpoints: 0 576px 768px 992px 1200px 1600px;
-  $slicer-breakpoint-names: 'xs' 'sm' 'md' 'lg' 'xl' 'hd';
-  $slicer-anti-overlap-corrections: -1px;
+@if ($slicer-breakpoints-settings == true) {
+    $slicer-breakpoints: 0 576px 768px 992px 1200px 1600px;
+    $slicer-breakpoint-names: "xs" "sm" "md" "lg" "xl" "hd";
+    $slicer-anti-overlap-corrections: -1px;
 }
 
 /**
@@ -23,19 +22,20 @@ $slicer-breakpoints-settings: true;
  *
  * @see https://getbootstrap.com/docs/4.1/getting-started/theming/#variable-defaults
  */
-$font-size-base:1.4rem;
-$font-weight-base:300;
-$font-family-base: 'Ubuntu', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$btn-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out;
-$border-radius:.4rem;
-$primary:blue;
-$btn-box-shadow:none;
-$btn-active-box-shadow:none;
-$btn-focus-box-shadow:none;
-$input-btn-focus-box-shadow:none;
-$input-border-radius:0;
-$grid-columns:12;
-$grid-gutter-width:30px;
+$font-size-base: 1.4rem;
+$font-weight-base: 300;
+$font-family-base: "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$btn-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+$border-radius: 0.4rem;
+$primary: blue;
+$btn-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-focus-box-shadow: none;
+$input-btn-focus-box-shadow: none;
+$input-border-radius: 0;
+$grid-columns: 12;
+$grid-gutter-width: 30px;
 $body-color: black;
 
 $grid-breakpoints: (
@@ -44,7 +44,7 @@ $grid-breakpoints: (
     md: 768px,
     lg: 992px,
     xl: 1200px,
-    hd: 1600px
+    hd: 1600px,
 );
 
 $container-max-widths: (
@@ -55,7 +55,7 @@ $container-max-widths: (
     hd: 1560px,
 );
 
-$spacers : (
+$spacers: (
     1: 1rem,
     2: 2rem,
     3: 3rem,

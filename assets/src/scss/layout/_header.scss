@@ -1,3 +1,28 @@
 .site-header {
-    background-color: #000000;
+    .site-branding {
+        p {
+            display: none;
+        }
+    }
+
+    .main-navigation {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                margin-right: 20px;
+                list-style: none;
+                font-family: "Rubik", sans-serif;
+                font-size: 12.5px;
+                font-weight: 400;
+                letter-spacing: 0.05rem;
+                text-transform: uppercase;
+            }
+        }
+    }
 }

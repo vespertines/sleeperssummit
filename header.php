@@ -24,7 +24,13 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-main', 'menu_id' => 'menu-main' ) ); ?>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<?php wp_nav_menu( array( 'theme_location' => 'menu-main', 'menu_id' => 'menu-main' ) ); ?>
+					</div>
+				</div>
+			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

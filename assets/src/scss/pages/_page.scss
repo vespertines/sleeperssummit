@@ -3,36 +3,36 @@
 
 // Project
 main {
-    font-family: "S-CoreDream-2ExtraLight";
+	font-family: "S-CoreDream-2ExtraLight";
 
-    &.project {
-        h2 {
-            color: #000;
-            font-size: 50px;
-            font-weight: normal;
-        }
+	&.project {
+		h2 {
+			color: #000;
+			font-size: 50px;
+			font-weight: normal;
+		}
 
-        .content {
-            .video {
-                position: relative;
-                width: 100%;
-                height: 0;
-                padding-bottom: 56.25%;
+		.content {
+			.video {
+				position: relative;
+				width: 100%;
+				height: 0;
+				padding-bottom: 56.25%;
 
-                iframe {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        }
+				iframe {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
 
-        .image {
-            img {
-                max-width: 100%;
-            }
-        }
-    }
+		.image {
+			img {
+				max-width: 100%;
+			}
+		}
+	}
 }

@@ -1,28 +1,32 @@
 .site-header {
-    .site-branding {
-        p {
-            display: none;
-        }
-    }
+	.site-branding {
+		.logo {
+			padding-top: 60px;
+			padding-bottom: 60px;
+			text-align: center;
+			img {
+				width: 150px;
+			}
+		}
+	}
 
-    .main-navigation {
-        padding-top: 20px;
-        padding-bottom: 20px;
-
-        ul {
-            margin: 0;
-            padding: 0;
-
-            li {
-                display: inline-block;
-                margin-right: 20px;
-                list-style: none;
-                font-family: "Rubik", sans-serif;
-                font-size: 12.5px;
-                font-weight: 400;
-                letter-spacing: 0.05rem;
-                text-transform: uppercase;
-            }
-        }
-    }
+	.main-navigation {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		ul {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			li {
+				display: inline-block;
+				margin-right: 20px;
+				list-style: none;
+				font-family: "Rubik", sans-serif;
+				font-size: 12.5px;
+				font-weight: 400;
+				letter-spacing: 0.05rem;
+				text-transform: uppercase;
+			}
+		}
+	}
 }

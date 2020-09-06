@@ -10,11 +10,22 @@ get_header();
 		        ?>
 
                 <section>
-			        <?php the_title('<h1>', '</h1>'); ?>
+			        <?php // the_title('<h1>', '</h1>'); ?>
 
 			        <?php
-			        the_content();
-			        ?>
+			        // the_content();
+					?>
+					<div class="video">
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/R38XCsv-1tw?loop=1&modestbranding=1"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+					<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/R38XCsv-1tw?controls=0;autoplay=1;start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 </section>
 
 		        <?php

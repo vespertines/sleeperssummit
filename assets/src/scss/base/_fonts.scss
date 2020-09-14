@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
-
 @font-face {
 	font-family: "S-CoreDream-2ExtraLight";
 	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff")
@@ -9,3 +7,13 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
+
+body {
+	color: rgb(30, 30, 30);
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-size: calc(
+		20px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 35
+	);
+	line-height: 1.5;
+	letter-spacing: -0.025em;
+}

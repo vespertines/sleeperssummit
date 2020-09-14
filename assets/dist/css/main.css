@@ -12,13 +12,19 @@
  *
  * @see https://getbootstrap.com/docs/4.1/getting-started/theming/#variable-defaults
  */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
 @font-face {
   font-family: "S-CoreDream-2ExtraLight";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+body {
+  color: #1e1e1e;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: calc( 20px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 35);
+  line-height: 1.5;
+  letter-spacing: -0.025em; }
 
 html {
   font-size: 62.5%;
@@ -49,10 +55,9 @@ a:active {
 
 .site-header .site-branding .logo {
   padding-top: 60px;
-  padding-bottom: 60px;
-  text-align: center; }
+  padding-bottom: 30px; }
   .site-header .site-branding .logo img {
-    width: 150px; }
+    height: 90px; }
 
 .site-header .main-navigation {
   padding-top: 20px;
@@ -64,12 +69,63 @@ a:active {
     .site-header .main-navigation ul li {
       display: inline-block;
       margin-right: 20px;
-      list-style: none;
-      font-family: "Rubik", sans-serif;
-      font-size: 12.5px;
-      font-weight: 400;
-      letter-spacing: 0.05rem;
-      text-transform: uppercase; }
+      list-style: none; }
+
+.site-header .subscription {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  text-align: right; }
+  .site-header .subscription input {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90px;
+    font-family: "S-CoreDream-2ExtraLight";
+    font-size: 15px;
+    letter-spacing: 0.05em; }
+    .site-header .subscription input[type="email"] {
+      margin-right: 20px;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 2px solid #000;
+      height: 26px;
+      -webkit-transition: width 0.5s;
+      transition: width 0.5s;
+      font-size: 15px;
+      line-height: 26px;
+      letter-spacing: 0.05em; }
+      .site-header .subscription input[type="email"]:focus {
+        width: 120px; }
+    .site-header .subscription input[type="submit"] {
+      padding-left: 10px;
+      padding-right: 10px;
+      border: 0;
+      cursor: pointer;
+      background-color: #000;
+      color: #fff;
+      line-height: 30px; }
+
+.site-footer {
+  margin-top: 90px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #000000;
+  color: #ffffff; }
+  .site-footer .footer {
+    padding-top: 30px;
+    border-top: solid 1px #ffffff; }
+    .site-footer .footer .content {
+      padding-bottom: 30px; }
+      .site-footer .footer .content ul {
+        margin: 0;
+        padding: 0; }
+        .site-footer .footer .content ul li {
+          display: inline-block;
+          padding-right: 10px;
+          list-style: none; }
+          .site-footer .footer .content ul li img {
+            height: 35px; }
 
 html,
 body {
@@ -99,16 +155,16 @@ body {
   display: none; }
 
 .container {
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto; }
   @media only screen and (min-width: 33.75em) {
     .container {
-      width: 80%; } }
+      width: 90%; } }
   @media only screen and (min-width: 60em) {
     .container {
-      width: 75%;
-      max-width: 60rem; } }
+      width: 90%;
+      max-width: 80rem; } }
 
 .row {
   position: relative;
@@ -216,6 +272,12 @@ main .video {
 
 main {
   font-family: "S-CoreDream-2ExtraLight"; }
+  main .intro {
+    padding-top: 30px;
+    padding-bottom: 60px; }
+    main .intro span {
+      font-size: 20px;
+      line-height: 2; }
   main.project h2 {
     color: #000;
     font-size: 50px;

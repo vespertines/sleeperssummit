@@ -2,10 +2,9 @@
 	.site-branding {
 		.logo {
 			padding-top: 60px;
-			padding-bottom: 60px;
-			text-align: center;
+			padding-bottom: 30px;
 			img {
-				width: 150px;
+				height: 90px;
 			}
 		}
 	}
@@ -13,6 +12,7 @@
 	.main-navigation {
 		padding-top: 20px;
 		padding-bottom: 20px;
+
 		ul {
 			margin: 0;
 			padding: 0;
@@ -21,11 +21,46 @@
 				display: inline-block;
 				margin-right: 20px;
 				list-style: none;
-				font-family: "Rubik", sans-serif;
-				font-size: 12.5px;
-				font-weight: 400;
-				letter-spacing: 0.05rem;
-				text-transform: uppercase;
+			}
+		}
+	}
+
+	.subscription {
+		margin-top: 70px;
+		margin-bottom: 30px;
+		text-align: right;
+		input {
+			float: left;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			width: 90px;
+			font-family: "S-CoreDream-2ExtraLight";
+			font-size: 15px;
+			letter-spacing: 0.05em;
+			&[type="email"] {
+				margin-right: 20px;
+				border-top: 0;
+				border-left: 0;
+				border-right: 0;
+				border-bottom: 2px solid #000;
+				height: 26px;
+				transition: width 0.5s;
+				font-size: 15px;
+				line-height: 26px;
+				letter-spacing: 0.05em;
+				&:focus {
+					width: 120px;
+				}
+			}
+
+			&[type="submit"] {
+				padding-left: 10px;
+				padding-right: 10px;
+				border: 0;
+				cursor: pointer;
+				background-color: #000;
+				color: #fff;
+				line-height: 30px;
 			}
 		}
 	}

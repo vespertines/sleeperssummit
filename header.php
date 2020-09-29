@@ -13,7 +13,7 @@
 	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="row">
-				<div class="col-7">
+				<div class="col-6">
 					<div class="site-branding">
 						<div class="logo">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/ss.png"></a>
@@ -34,7 +34,7 @@
 						<?php // wp_nav_menu( array( 'theme_location' => 'menu-main', 'menu_id' => 'menu-main' ) ); ?>
 					</nav>
 				</div> -->
-				<div class="col-5">
+				<div class="col-6">
 					<!-- Begin Mailchimp Signup Form -->
 					<div class="subscription" id="mc_embed_signup">
 						<form action="https://sleeperssummit.us17.list-manage.com/subscribe/post?u=8fcbfb21b7859cce2212ed8c3&amp;id=478fbf70dd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

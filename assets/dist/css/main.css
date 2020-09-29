@@ -12,19 +12,15 @@
  *
  * @see https://getbootstrap.com/docs/4.1/getting-started/theming/#variable-defaults
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
-@font-face {
-  font-family: "S-CoreDream-2ExtraLight";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600&display=swap");
 body {
-  color: #1e1e1e;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: "Spoqa Han Sans";
   font-size: calc( 20px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 35);
+  font-smoothing: antialiased;
   line-height: 1.5;
-  letter-spacing: -0.025em; }
+  letter-spacing: 0.05em; }
 
 html {
   font-size: 62.5%;
@@ -78,11 +74,7 @@ a:active {
   .site-header .subscription input {
     float: left;
     padding-top: 5px;
-    padding-bottom: 5px;
-    width: 90px;
-    font-family: "S-CoreDream-2ExtraLight";
-    font-size: 15px;
-    letter-spacing: 0.05em; }
+    padding-bottom: 5px; }
     .site-header .subscription input[type="email"] {
       margin-right: 20px;
       border-top: 0;
@@ -92,11 +84,9 @@ a:active {
       height: 26px;
       -webkit-transition: width 0.5s;
       transition: width 0.5s;
-      font-size: 15px;
-      line-height: 26px;
-      letter-spacing: 0.05em; }
+      line-height: 26px; }
       .site-header .subscription input[type="email"]:focus {
-        width: 120px; }
+        width: 150px; }
     .site-header .subscription input[type="submit"] {
       padding-left: 10px;
       padding-right: 10px;
@@ -116,16 +106,27 @@ a:active {
     padding-top: 30px;
     border-top: solid 1px #ffffff; }
     .site-footer .footer .content {
-      padding-bottom: 30px; }
+      padding-bottom: 15px; }
+      .site-footer .footer .content span {
+        font-size: 12.5px;
+        font-weight: 500;
+        line-height: 1.25; }
+        .site-footer .footer .content span.en {
+          font-family: "Darker Grotesque", sans-serif;
+          font-size: 15px;
+          letter-spacing: 0.01em; }
       .site-footer .footer .content ul {
         margin: 0;
         padding: 0; }
         .site-footer .footer .content ul li {
           display: inline-block;
+          padding-bottom: 5px;
           padding-right: 10px;
           list-style: none; }
+          .site-footer .footer .content ul li:last-child {
+            padding-right: 0; }
           .site-footer .footer .content ul li img {
-            height: 35px; }
+            height: 25px; }
 
 html,
 body {
@@ -258,42 +259,66 @@ body {
   .hidden-sm {
     display: block; } }
 
-main .video {
+main .intro {
+  padding-bottom: 60px; }
+  main .intro span {
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    line-height: 2; }
+
+main .video video {
+  width: 100%; }
+
+main .schedule {
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  main .schedule table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    letter-spacing: 0.025em;
+    line-height: 1.5;
+    text-align: center; }
+    main .schedule table tr {
+      height: 50px; }
+      main .schedule table tr:first-of-type {
+        border-bottom: solid 2px #000000; }
+      main .schedule table tr th,
+      main .schedule table tr td {
+        width: 25%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        vertical-align: top; }
+        main .schedule table tr th span,
+        main .schedule table tr td span {
+          display: inline-block;
+          margin-right: 10px;
+          color: #999999; }
+      main .schedule table tr th {
+        padding-right: 10px;
+        font-weight: normal; }
+
+main.project h2 {
+  color: #000;
+  font-size: 50px;
+  font-weight: normal; }
+
+main.project .content .video {
   position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%; }
-  main .video iframe {
+  main.project .content .video iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
 
-main {
-  font-family: "S-CoreDream-2ExtraLight"; }
-  main .intro {
-    padding-top: 30px;
-    padding-bottom: 60px; }
-    main .intro span {
-      font-size: 20px;
-      line-height: 2; }
-  main.project h2 {
-    color: #000;
-    font-size: 50px;
-    font-weight: normal; }
-  main.project .content .video {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; }
-    main.project .content .video iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  main.project .image img {
-    max-width: 100%; }
+main.project .image img {
+  max-width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

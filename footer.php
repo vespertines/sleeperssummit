@@ -7,14 +7,14 @@
 				<div class="col-4">
 					<div class="footer">
 						<div class="content">
-							London Design Festival is an annual event, held to celebrate and promote London as the design capital of the world and as the gateway to the international creative community.
+							<span>슬리퍼스 써밋은 세계 곳곳에 머물며 다양한 영역에서 예술을 펼치고 있는 젊은 베테랑들이 모인 글로벌 창작 플랫폼으로, 전시, 페스티벌, 영상 제작을 하고 있습니다. 슬리퍼스 써밋은 생각을 촉진하는 예술과 아이디어 페스티벌을 중심으로, 예술가들과 음악인들의 출판과 활동을 돕는 다양한 노력을 하고 있습니다.</span>
 						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="footer">
 						<div class="content">
-							<ul>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/facebook.png"></li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/instagram.png"></li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/youtube.png"></li>
-							</ul>
+							<span class="en">Sleepers Summit is a creative community that brings together various global practitioners to present exhibitions, festivals and film productions. We provide immersive, thought-provoking and arts and ideas festivals, with magazines and publications that support artists and musicians.</span>
 						</div>
 					</div>
 				</div>
@@ -22,24 +22,17 @@
 					<div class="footer">
 						<div class="content">
 							<div class="content">
-								Head Office
-								<br>33 John Street
-								<br>London, WC1N 2AT
-								<br>United Kingdom
+								<ul>
+									<li><a href="mailto:sleeperssummit@gmail.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/email.png"></a></li>
+									<li><a href="https://www.facebook.com/Sleepers100/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/facebook.png"></a></li>
+									<li><a href="https://www.instagram.com/sleepers_summit/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/instagram.png"></a></li>
+									<li><a href="https://www.youtube.com/channel/UC2WGL_A2jLaDi1x7Vq72lYw" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/youtube.png"></a></li>
+								</ul>
 							</div>
 							<div class="content">
-								Contact
-								<br>+44 20 7242 6022
+								<span class="en">© Sleepers Summit. All rights reserved.</span>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="footer">
-						<div class="content">We are committed to protecting our visitor and Partners' privacy. We are entirely open about our information gathering practices. Please take the time to review our Privacy Policy here.</div>
-						<div class="content">Company No: 4415754
-						<br>VAT Registered No: 809647303</div>
-						<div class="content">© London Design Festival. All rights reserved.</div>
 					</div>
 				</div>
 			</div>

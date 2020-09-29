@@ -1,16 +1,52 @@
 main {
+	.intro {
+		padding-bottom: 60px;
+		span {
+			font-size: 15px;
+			letter-spacing: 0.05em;
+			line-height: 2;
+		}
+	}
 	.video {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding-bottom: 56.25%;
-
-		iframe {
-			position: absolute;
-			top: 0;
-			left: 0;
+		video {
 			width: 100%;
-			height: 100%;
+		}
+	}
+	.schedule {
+		padding-top: 120px;
+		padding-bottom: 120px;
+		table {
+			width: 100%;
+			border: none;
+			border-collapse: collapse;
+			font-size: 12.5px;
+			letter-spacing: 0.025em;
+			line-height: 1.5;
+			text-align: center;
+			tr {
+				height: 50px;
+				&:first-of-type {
+					border-bottom: solid 2px #000000;
+				}
+				th,
+				td {
+					width: 25%;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					padding-left: 10px;
+					padding-right: 10px;
+					vertical-align: top;
+					span {
+						display: inline-block;
+						margin-right: 10px;
+						color: #999999;
+					}
+				}
+				th {
+					padding-right: 10px;
+					font-weight: normal;
+				}
+			}
 		}
 	}
 }

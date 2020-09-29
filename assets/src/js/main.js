@@ -1,8 +1,7 @@
-import 'babel-polyfill';
-import General from './_generalScripts';
+import "babel-polyfill";
+import General from "./_generalScripts";
 
 const App = {
-
 	/**
 	 * App.init
 	 */
@@ -12,10 +11,9 @@ const App = {
 			return new General();
 		}
 		initGeneral();
-	}
-
+	},
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
 	App.init();
 });

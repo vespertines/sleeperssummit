@@ -106,7 +106,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! babel-polyfill */ \"./node_modules/babel-polyfill/lib/index.js\");\n\nvar _generalScripts = __webpack_require__(/*! ./_generalScripts */ \"./assets/src/js/_generalScripts.js\");\n\nvar _generalScripts2 = _interopRequireDefault(_generalScripts);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = {\n\n\t/**\n  * App.init\n  */\n\tinit: function init() {\n\t\t// General scripts\n\t\tfunction initGeneral() {\n\t\t\treturn new _generalScripts2.default();\n\t\t}\n\t\tinitGeneral();\n\t}\n};\n\ndocument.addEventListener('DOMContentLoaded', function () {\n\tApp.init();\n});\n\n//# sourceURL=webpack:///./assets/src/js/main.js?");
+eval("\n\n__webpack_require__(/*! babel-polyfill */ \"./node_modules/babel-polyfill/lib/index.js\");\n\nvar _generalScripts = __webpack_require__(/*! ./_generalScripts */ \"./assets/src/js/_generalScripts.js\");\n\nvar _generalScripts2 = _interopRequireDefault(_generalScripts);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = {\n\t/**\n  * App.init\n  */\n\tinit: function init() {\n\t\t// General scripts\n\t\tfunction initGeneral() {\n\t\t\treturn new _generalScripts2.default();\n\t\t}\n\t\tinitGeneral();\n\t}\n};\n\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n\tApp.init();\n});\n\n//# sourceURL=webpack:///./assets/src/js/main.js?");
 
 /***/ }),
 

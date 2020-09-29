@@ -3,24 +3,12 @@
 
 // Project
 main {
-	font-family: "S-CoreDream-2ExtraLight";
-
-	.intro {
-		padding-top: 30px;
-		padding-bottom: 60px;
-		span {
-			font-size: 20px;
-			line-height: 2;
-		}
-	}
-
 	&.project {
 		h2 {
 			color: #000;
 			font-size: 50px;
 			font-weight: normal;
 		}
-
 		.content {
 			.video {
 				position: relative;
@@ -36,7 +24,6 @@ main {
 				}
 			}
 		}
-
 		.image {
 			img {
 				max-width: 100%;

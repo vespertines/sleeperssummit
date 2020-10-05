@@ -13,7 +13,6 @@
  * @see https://getbootstrap.com/docs/4.1/getting-started/theming/#variable-defaults
  */
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600&display=swap");
 body {
   color: rgba(0, 0, 0, 0.85);
   font-family: "Spoqa Han Sans";
@@ -74,7 +73,8 @@ a:active {
   .site-header .subscription input {
     float: left;
     padding-top: 5px;
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    width: 90px; }
     .site-header .subscription input[type="email"] {
       margin-right: 20px;
       border-top: 0;
@@ -97,9 +97,9 @@ a:active {
       line-height: 30px; }
 
 .site-footer {
-  margin-top: 90px;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #000000;
   color: #ffffff; }
   .site-footer .footer {
@@ -112,9 +112,8 @@ a:active {
         font-weight: 500;
         line-height: 1.25; }
         .site-footer .footer .content span.en {
-          font-family: "Darker Grotesque", sans-serif;
-          font-size: 15px;
-          letter-spacing: 0.01em; }
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+          letter-spacing: -0.0125rem; }
       .site-footer .footer .content ul {
         margin: 0;
         padding: 0; }
@@ -270,7 +269,7 @@ main .video video {
   width: 100%; }
 
 main .schedule {
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 120px; }
   main .schedule table {
     width: 100%;

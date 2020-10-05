@@ -25,7 +25,19 @@ get_header();
                         <div class="row">
                             <div class="col-12">
                                 <div class="video">
-                                    <video autoplay="autoplay" loop><source src="<?php echo get_template_directory_uri(); ?>/assets/dist/video/main.mp4" type="video/mp4"></video>
+                                    <video
+                                        class="video-js"
+                                        autoplay
+                                        loop
+                                        preload="auto"
+                                        data-setup='{"fluid": true}'
+                                    >
+                                        <source src="<?php echo get_template_directory_uri(); ?>/assets/dist/video/loop.mp4" type="video/mp4" />
+                                        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a
+                                        ></p>
+                                    </video>
+
+                                    <!-- <video autoplay loop><source src="<?php echo get_template_directory_uri(); ?>/assets/dist/video/loop.mp4" type="video/mp4"></video> -->
                                 </div>
                             </div>
                         </div>

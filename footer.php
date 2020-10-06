@@ -13,6 +13,11 @@
 				</div>
 				<div class="col-4">
 					<div class="footer">
+						<!-- <nav>
+							<ul>
+								<li><a href="#">About Us</a></li>
+							</ul>
+						</nav> -->
 						<div class="content">
 							<span class="en">Sleepers Summit is a creative community that brings together various global practitioners to present exhibitions, festivals and film productions. We provide immersive, thought-provoking and arts and ideas festivals, with magazines and publications that support artists and musicians.</span>
 						</div>
@@ -20,18 +25,16 @@
 				</div>
 				<div class="col-4">
 					<div class="footer">
-						<div class="content">
-							<div class="content">
-								<ul>
-									<li><a href="mailto:sleeperssummit@gmail.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/email.png"></a></li>
-									<li><a href="https://www.facebook.com/Sleepers100/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/facebook.png"></a></li>
-									<li><a href="https://www.instagram.com/sleepers_summit/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/instagram.png"></a></li>
-									<li><a href="https://www.youtube.com/channel/UC2WGL_A2jLaDi1x7Vq72lYw" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/youtube.png"></a></li>
-								</ul>
-							</div>
-							<div class="content">
-								<span class="en">© Sleepers Summit. All rights reserved.</span>
-							</div>
+						<div class="social">
+							<ul>
+								<li><a href="mailto:sleeperssummit@gmail.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/email.png"></a></li>
+								<li><a href="https://www.facebook.com/Sleepers100/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/facebook.png"></a></li>
+								<li><a href="https://www.instagram.com/sleepers_summit/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/instagram.png"></a></li>
+								<li><a href="https://www.youtube.com/channel/UC2WGL_A2jLaDi1x7Vq72lYw" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/youtube.png"></a></li>
+							</ul>
+						</div>
+						<div class="credit">
+							<span>© Sleepers Summit. All rights reserved.</span>
 						</div>
 					</div>
 				</div>
@@ -41,6 +44,21 @@
 </div><!-- #page -->
 
 <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+<script>
+	function mobileNav() {
+		var x = document.getElementById("mobileNav");
+		x.style.display = "block";
+		// if (x.style.display === "none") {
+		// 	x.style.display = "block";
+		// } else {
+		// 	x.style.display = "none";
+		// }
+	}
+	function closeMobileNav() {
+		var x = document.getElementById("mobileNav");
+		x.style.display = "none";
+	}
+</script>
 <?php wp_footer(); ?>
 
 </body>

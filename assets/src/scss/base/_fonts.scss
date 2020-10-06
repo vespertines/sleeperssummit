@@ -1,13 +1,39 @@
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+// @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+// @import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+
+/* latin */
+@font-face {
+	font-family: "Piazzolla";
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/piazzolla/v2/N0b72SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ88Rbvi0_TzOzKcQhZqx7gL3Aj68i5ISaw.woff)
+		format("woff");
+	unicode-range: U+0020-007E;
+}
+/* latin */
+@font-face {
+	font-family: "Piazzolla";
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/piazzolla/v2/N0b52SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFfYUjkSDdlqZgy7LYxkL13gb9BRy4k5M.woff)
+		format("woff");
+	unicode-range: U+0020-007E;
+}
+
+@font-face {
+	font-family: "Spoqa Han Sans";
+	font-weight: 400;
+	src: local("Spoqa Han Sans Regular"),
+		url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff")
+			format("woff");
+}
 
 body {
-	color: rgba(0, 0, 0, 0.85);
-	font-family: "Spoqa Han Sans";
+	color: #1f1e2c;
+	font-family: "Piazzolla", "Spoqa Han Sans", sans-serif;
 	font-size: calc(
-		20px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 35
+		15px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 35
 	);
-	font-smoothing: antialiased;
-
 	line-height: 1.5;
 	letter-spacing: 0.05em;
 }

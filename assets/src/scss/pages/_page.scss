@@ -1,3 +1,7 @@
+body {
+	background-color: #fafafa;
+}
+
 .page-template-default {
 }
 
@@ -5,24 +9,8 @@
 main {
 	&.project {
 		h2 {
-			color: #000;
+			color: #1f1e2c;
 			font-size: 50px;
-			font-weight: normal;
-		}
-		.content {
-			.video {
-				position: relative;
-				width: 100%;
-				height: 0;
-				padding-bottom: 56.25%;
-				iframe {
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-				}
-			}
 		}
 		.image {
 			img {

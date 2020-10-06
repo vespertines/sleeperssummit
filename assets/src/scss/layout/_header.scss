@@ -1,61 +1,200 @@
-.site-header {
-	.site-branding {
-		.logo {
-			padding-top: 60px;
-			padding-bottom: 30px;
-			img {
-				height: 90px;
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-med: 45em; // 720px
+$breakpoint-large: 60em; // 960px
+
+nav {
+	&.mobile-navigation {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		background-color: #1f1e2c;
+		width: 100%;
+		height: 100%;
+		.navigation {
+			ul {
+				margin: 0;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				padding-left: 30px;
+				padding-bottom: 30px;
+				li {
+					margin: 0;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					list-style: none;
+					a {
+						color: #ffffff;
+						font-style: italic;
+						font-size: 20px;
+						letter-spacing: -0.025rem;
+						line-height: 20px;
+					}
+				}
+			}
+		}
+		.mobile-social {
+			ul {
+				margin: 0;
+				padding-left: 30px;
+				padding-right: 30px;
+				li {
+					display: inline-block;
+					padding-bottom: 5px;
+					padding-right: 10px;
+					list-style: none;
+					&:last-child {
+						padding-right: 0;
+					}
+					img {
+						height: 25px;
+					}
+				}
 			}
 		}
 	}
-
+}
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	border-bottom: solid 1px hsla(0, 0%, 50.2%, 0.21);
+	width: calc(100% - 2vw);
+	max-width: 2500px;
+	min-width: 320px;
+	background-color: #fafafa;
+	font-size: 0;
+	@media only screen and (max-width: $breakpoint-small) {
+		padding-left: 2%;
+		padding-right: 2%;
+		width: 96%;
+	}
+	.block {
+		display: inline-block;
+		vertical-align: top;
+		width: 270px;
+		&:first-of-type {
+			width: calc(100% - 270px);
+		}
+	}
+	.nav-button {
+		display: none;
+		margin-right: 5vw;
+		padding-top: 31px;
+		padding-bottom: 31px;
+		vertical-align: top;
+		@media only screen and (max-width: $breakpoint-med) {
+			display: inline-block;
+		}
+		@media only screen and (max-width: $breakpoint-small) {
+			padding-top: 21px;
+			padding-bottom: 21px;
+		}
+		span {
+			display: block;
+			margin-top: 4px;
+			margin-bottom: 4px;
+			width: 20px;
+			height: 3px;
+			background-color: #1f1e2c;
+		}
+	}
+	.site-branding {
+		display: inline-block;
+		@media only screen and (max-width: $breakpoint-small) {
+			padding-left: 0;
+		}
+		.logo {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			img {
+				height: 60px;
+				@media only screen and (max-width: $breakpoint-small) {
+					height: 40px;
+				}
+			}
+		}
+	}
 	.main-navigation {
-		padding-top: 20px;
-		padding-bottom: 20px;
-
+		display: inline-block;
+		vertical-align: top;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 2vw;
+		@media only screen and (max-width: $breakpoint-med) {
+			display: none;
+		}
 		ul {
 			margin: 0;
 			padding: 0;
-			text-align: center;
 			li {
 				display: inline-block;
-				margin-right: 20px;
 				list-style: none;
+				margin-right: 1vw;
+				&:last-of-type {
+					margin-right: 0;
+				}
+				a {
+					color: #1f1e2c;
+					font-size: 13.5px;
+					font-style: italic;
+					letter-spacing: -0.025rem;
+					line-height: 20px;
+					transition: all 0.5s;
+					&:hover {
+						color: #1f1e2c;
+					}
+				}
 			}
 		}
 	}
-
 	.subscription {
-		margin-top: 70px;
-		margin-bottom: 30px;
+		padding-top: 25px;
+		padding-bottom: 25px;
 		text-align: right;
+		@media only screen and (max-width: $breakpoint-small) {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
 		input {
-			float: left;
+			display: inline-block;
 			padding-top: 5px;
 			padding-bottom: 5px;
-			width: 90px;
 			&[type="email"] {
-				margin-right: 20px;
+				margin-right: 10px;
 				border-top: 0;
 				border-left: 0;
 				border-right: 0;
-				border-bottom: 2px solid #000;
-				height: 26px;
+				border-bottom: 1px solid #1f1e2c;
+				background-color: #fafafa;
+				width: 90px;
+				height: 16px;
 				transition: width 0.5s;
-				line-height: 26px;
+				font-size: 12.5px;
+				line-height: 16px;
 				&:focus {
 					width: 150px;
+					@media only screen and (max-width: $breakpoint-small) {
+						width: 90px;
+					}
 				}
 			}
-
 			&[type="submit"] {
-				padding-left: 10px;
-				padding-right: 10px;
+				padding-left: 5px;
+				padding-right: 5px;
 				border: 0;
+				width: 80px;
 				cursor: pointer;
-				background-color: #000;
+				background-color: #1f1e2c;
 				color: #fff;
-				line-height: 30px;
+				font-size: 12.5px;
+				line-height: 20px;
 			}
 		}
 	}

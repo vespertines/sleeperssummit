@@ -1,23 +1,22 @@
 .site-footer {
-	margin-top: 30px;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background-color: #000000;
+	background-color: #1f1e2c;
 	color: #ffffff;
 	.footer {
-		padding-top: 30px;
-		border-top: solid 1px #ffffff;
 		.content {
-			padding-bottom: 15px;
+			padding-bottom: 10px;
 			span {
 				font-size: 12.5px;
-				font-weight: 500;
 				line-height: 1.25;
 				&.en {
-					font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+					font-style: italic;
+					font-size: 13.5px;
 					letter-spacing: -0.0125rem;
 				}
 			}
+		}
+		.social {
 			ul {
 				margin: 0;
 				padding: 0;
@@ -30,9 +29,16 @@
 						padding-right: 0;
 					}
 					img {
-						height: 25px;
+						height: 15px;
 					}
 				}
+			}
+		}
+		.credit {
+			span {
+				font-style: italic;
+				font-size: 10px;
+				letter-spacing: 0;
 			}
 		}
 	}

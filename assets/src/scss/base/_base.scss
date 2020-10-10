@@ -9,8 +9,6 @@ body {
 	-webkit-text-size-adjust: 100%;
 	text-rendering: optimizeLegibility;
 	-moz-osx-font-smoothing: grayscale;
-	-moz-appearance: none;
-	-webkit-appearance: none;
 }
 
 body {
@@ -29,6 +27,8 @@ a:active {
 *:hover,
 *:focus {
 	outline: 0 !important;
+	-moz-appearance: none;
+	-webkit-appearance: none;
 }
 
 .transition,

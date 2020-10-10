@@ -79,8 +79,14 @@ nav {
 		display: inline-block;
 		vertical-align: top;
 		width: 270px;
+		@media only screen and (max-width: $breakpoint-small) {
+			width: 210px;
+		}
 		&:first-of-type {
 			width: calc(100% - 270px);
+			@media only screen and (max-width: $breakpoint-small) {
+				width: calc(100% - 210px);
+			}
 		}
 	}
 	.nav-button {
@@ -166,6 +172,8 @@ nav {
 			display: inline-block;
 			padding-top: 5px;
 			padding-bottom: 5px;
+			padding-left: 0;
+			padding-right: 0;
 			&[type="email"] {
 				margin-right: 10px;
 				border-top: 0;

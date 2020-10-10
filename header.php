@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <?php wp_head(); ?>
 <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
@@ -17,6 +17,7 @@
 			<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="/bellong-bellong-now">Bellong Bellong Now</a></li>
+				<li><a href="/jeju-curation">Jeju Curation</a></li>
 				<li><a href="/about-us">About Us</a></li>
 			</ul>
 		</div>
@@ -52,6 +53,7 @@
 			<nav id="site-navigation" class="main-navigation">
 				<ul>
 					<li><a href="/bellong-bellong-now">Bellong Bellong Now</a></li>
+					<li><a href="/jeju-curation">Jeju Curation</a></li>
 					<!-- <li><a href="#">Sleepers in Venice</a></li> -->
 					<li><a href="/about-us">About Us</a></li>
 				</ul>

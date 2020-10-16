@@ -8,6 +8,7 @@
 <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
 <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
 <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<link href="<?php bloginfo('template_url'); ?>/assets/dist/css/main.css" rel="stylesheet" />
 </head>
 
 <body <?php body_class(); ?>>
@@ -49,12 +50,12 @@
 				<?php
 				endif;
 				?>
-			</div><!-- .site-branding -->
+			</div>
 			<nav id="site-navigation" class="main-navigation">
 				<ul>
 					<li><a href="/bellong-bellong-now">Bellong Bellong Now</a></li>
 					<li><a href="/jeju-curation">Jeju Curation</a></li>
-					<!-- <li><a href="#">Sleepers in Venice</a></li> -->
+					<li><a href="/sleepers-summit-tv">Sleepers Summit TV</li>
 					<li><a href="/about-us">About Us</a></li>
 				</ul>
 				<?php // wp_nav_menu( array( 'theme_location' => 'menu-main', 'menu_id' => 'menu-main' ) ); ?>

@@ -1,7 +1,23 @@
-// @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-// @import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@font-face {
+	font-family: "Piazzolla";
+	font-style: italic;
+	font-weight: 100;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/piazzolla/v3/N0b72SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ88Rbvi0_TzOzKcQhZqw7gL3Aj68i5ISaw.woff)
+		format("woff");
+	unicode-range: U+0020-007E;
+}
 
-/* latin */
+@font-face {
+	font-family: "Piazzolla";
+	font-style: normal;
+	font-weight: 100;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/piazzolla/v3/N0b52SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFfYUjkSDdlqZgy7LYx0L13gb9BRy4k5M.woff)
+		format("woff");
+	unicode-range: U+0020-007E;
+}
+
 @font-face {
 	font-family: "Piazzolla";
 	font-style: italic;
@@ -10,12 +26,52 @@
 		format("woff");
 	unicode-range: U+0020-007E;
 }
-/* latin */
+
 @font-face {
 	font-family: "Piazzolla";
 	font-style: normal;
 	font-weight: 400;
 	src: url(https://fonts.gstatic.com/s/piazzolla/v2/N0b52SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFfYUjkSDdlqZgy7LYxkL13gb9BRy4k5M.woff)
+		format("woff");
+	unicode-range: U+0020-007E;
+}
+
+@font-face {
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 100;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nWBi8JoI3ZKyHaQQ.woff)
+		format("woff");
+	unicode-range: U+0020-007E;
+}
+
+@font-face {
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/worksans/v8/QGYsz_wNahGAdqQ43Rh_fKDptfpA4Q.woff2)
+		format("woff2");
+	unicode-range: U+0020-007E;
+}
+
+@font-face {
+	font-family: "Work Sans";
+	font-style: italic;
+	font-weight: 300;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/worksans/v8/QGY9z_wNahGAdqQ43Rh_ebrnlwyYfEPxPoGUgGs5pIfeCSXCQNBf.woff)
+		format("woff");
+	unicode-range: U+0020-007E;
+}
+
+@font-face {
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBi8JoI3ZKyHaQQ.woff)
 		format("woff");
 	unicode-range: U+0020-007E;
 }
@@ -28,12 +84,44 @@
 			format("woff");
 }
 
+@font-face {
+	font-family: "Spoqa Han Sans";
+	font-weight: 300;
+	src: local("Spoqa Han Sans Light"),
+		url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.woff2")
+			format("woff2"),
+		url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.woff")
+			format("woff"),
+		url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.ttf")
+			format("truetype");
+}
+
+@font-face {
+	font-family: "Spoqa Han Sans";
+	font-weight: 100;
+	src: local("Spoqa Han Sans Thin"),
+		url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.woff2")
+			format("woff2"),
+		url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.woff")
+			format("woff"),
+		url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.ttf")
+			format("truetype");
+}
+
 body {
 	color: #1f1e2c;
+	font-family: "Work Sans", "Spoqa Han Sans", sans-serif;
+	font-size: 15px;
+	line-height: 1.75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+	padding: 0;
 	font-family: "Piazzolla", "Spoqa Han Sans", sans-serif;
-	font-size: calc(
-		20px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 35
-	);
-	line-height: 1.5;
-	letter-spacing: 0.05em;
+	font-weight: 300;
 }

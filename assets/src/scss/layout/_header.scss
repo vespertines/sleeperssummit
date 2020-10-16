@@ -26,6 +26,7 @@ nav {
 					list-style: none;
 					a {
 						color: #ffffff;
+						font-family: "Piazzolla";
 						font-style: italic;
 						font-size: 20px;
 						letter-spacing: -0.025rem;
@@ -64,7 +65,7 @@ nav {
 	margin-right: auto;
 	padding-left: 1vw;
 	padding-right: 1vw;
-	border-bottom: solid 1px hsla(0, 0%, 50.2%, 0.21);
+	border-bottom: solid 1px hsla(0, 0%, 50%, 0.2);
 	width: calc(100% - 2vw);
 	max-width: 2500px;
 	min-width: 320px;
@@ -148,8 +149,10 @@ nav {
 				}
 				a {
 					color: #1f1e2c;
+					font-family: "Piazzolla";
 					font-size: 13.5px;
 					font-style: italic;
+					font-weight: 400;
 					letter-spacing: -0.025rem;
 					line-height: 20px;
 					transition: all 0.5s;

@@ -19,7 +19,9 @@
 				<li><a href="/">Home</a></li>
 				<li><a href="/bellong-bellong-now">Bellong Bellong Now</a></li>
 				<li><a href="/jeju-curation">Jeju Curation</a></li>
+				<li><a href="/sleepers-summit-tv">Sleepers Summit TV</li>
 				<li><a href="/about-us">About Us</a></li>
+				<li><a href="https://forms.gle/KEGbJX8o7hzUu5Zu5" target="_blank" class="booking">사전 예약하기</a></li>
 			</ul>
 		</div>
 		<div class="mobile-social">
@@ -57,8 +59,8 @@
 					<li><a href="/jeju-curation">Jeju Curation</a></li>
 					<li><a href="/sleepers-summit-tv">Sleepers Summit TV</li>
 					<li><a href="/about-us">About Us</a></li>
+					<li><a href="https://forms.gle/KEGbJX8o7hzUu5Zu5" target="_blank" class="booking">사전 예약하기</a></li>
 				</ul>
-				<?php // wp_nav_menu( array( 'theme_location' => 'menu-main', 'menu_id' => 'menu-main' ) ); ?>
 			</nav>
 		</div><div class="block">
 			<!-- Begin Mailchimp Signup Form -->

@@ -17,6 +17,9 @@ body {
 			}
 			h2 {
 				margin-top: 0;
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 1.5;
 			}
 			h3 {
 				margin-top: 15px;
@@ -114,6 +117,43 @@ body {
 					padding-bottom: 30px;
 				}
 			}
+			.desc {
+				padding-top: 60px;
+			}
+			.tv {
+				text-align: center;
+				h3 {
+					margin-top: 0;
+					margin-bottom: 10px;
+					font-size: 20px;
+					line-height: 1.25;
+				}
+				h4 {
+					margin-bottom: 10px;
+					font-family: "Work Sans", "Spoqa Han Sans", sans-serif;
+					font-size: 15px;
+				}
+				h5 {
+					margin-bottom: 30px;
+					font-family: "Work Sans", "Spoqa Han Sans", sans-serif;
+					font-size: 10px;
+				}
+				span {
+					display: block;
+					margin-bottom: 10px;
+					font-size: 10px;
+				}
+				img {
+					margin-bottom: 5px;
+					max-width: 100%;
+				}
+			}
+		}
+	}
+	.sleepers-summit-tv {
+		.line {
+			margin-top: 30px;
+			margin-bottom: 30px;
 		}
 	}
 }

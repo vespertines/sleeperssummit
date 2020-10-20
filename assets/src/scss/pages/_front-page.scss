@@ -12,11 +12,27 @@ main {
 		padding-top: 60px;
 		padding-bottom: 60px;
 		span {
+			display: block;
 			color: #1f1e2c;
 			font-size: 17.5px;
 			font-family: "Piazzolla", "Spoqa Han Sans", sans-serif;
 			font-weight: 300;
 			line-height: 2;
+		}
+		a {
+			display: inline-block;
+			margin-top: 30px;
+			font-size: 20px;
+			font-family: "Piazzolla", "Spoqa Han Sans", sans-serif;
+			border-bottom: solid 1px #f57f17;
+			transition: all 0.25s;
+			&:hover {
+				border-bottom: solid 1px #fafafa;
+			}
+			&::after {
+				margin-left: 10px;
+				content: "→";
+			}
 		}
 	}
 	.line {
@@ -26,7 +42,6 @@ main {
 	.event-schedule {
 		padding-bottom: 60px;
 		h3 {
-			margin-bottom: 30px;
 			font-size: 25px;
 			font-weight: 300;
 			letter-spacing: 0.05rem;
@@ -44,74 +59,34 @@ main {
 			}
 			h4 {
 				margin-bottom: 30px;
-				font-family: "Work Sans", "Spoqa Han Sans", sans-serif;
+				font-family: "Piazzolla", "Spoqa Han Sans", sans-serif;
 				font-size: 20px;
-				font-weight: 300;
-				line-height: 1.25;
+				font-weight: 400;
+				line-height: 1.5;
+				a {
+					border-bottom: solid 1px #f57f17;
+					transition: all 0.25s;
+					&:hover {
+						border-bottom: solid 1px #fafafa;
+					}
+					&::after {
+						margin-left: 10px;
+						content: "→";
+					}
+				}
 			}
 			span {
 				display: block;
 				margin-bottom: 15px;
-				font-family: "Work Sans", "Spoqa Han Sans", sans-serif;
+				color: #898989;
 				font-size: 15px;
-				font-weight: 300;
 				a {
 					border-bottom: solid 1px #f57f17;
 					transition: all 0.25s;
-					color: #f57f17;
+					color: #1f1e2c;
 					&:hover {
-						color: #1f1e2c;
 						border-bottom: solid 1px #fafafa;
 					}
-				}
-			}
-		}
-	}
-	.schedule {
-		padding-bottom: 120px;
-		h3 {
-			font-size: 20px;
-		}
-		table {
-			width: 100%;
-			border: none;
-			border-collapse: collapse;
-			background-color: #ffffff;
-			font-size: 12.5px;
-			letter-spacing: 0.025em;
-			line-height: 1.5;
-			text-align: center;
-			tr {
-				height: 50px;
-				&:first-of-type {
-					border-bottom: solid 1px #1f1e2c;
-				}
-				th,
-				td {
-					width: 25%;
-					padding-top: 20px;
-					padding-bottom: 20px;
-					padding-left: 10px;
-					padding-right: 10px;
-					vertical-align: top;
-					span {
-						display: inline-block;
-						margin-right: 10px;
-						color: #999999;
-					}
-					a {
-						border-bottom: solid 1px #f57f17;
-						transition: all 0.25s;
-						color: #f57f17;
-						&:hover {
-							color: #1f1e2c;
-							border-bottom: solid 1px #fafafa;
-						}
-					}
-				}
-				th {
-					padding-right: 10px;
-					font-weight: normal;
 				}
 			}
 		}

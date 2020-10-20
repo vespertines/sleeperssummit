@@ -12,6 +12,18 @@
                     </div>           
                 </div>
                 <div class="col-4">
+                    <?php if( get_field("youtube") ): ?>
+                    <div class="youtube">
+                        <iframe
+                        width="560"
+                        height="315"
+                        src="<?php the_field("youtube"); ?>"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        ></iframe>
+                    </div>
+                    <?php endif; ?>
                     <?php while ( have_posts() ) : the_post(); ?>
                     <?php the_content(); ?>
                     <?php

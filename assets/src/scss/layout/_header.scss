@@ -1,6 +1,4 @@
-$breakpoint-small: 33.75em; // 540px
-$breakpoint-med: 45em; // 720px
-$breakpoint-large: 60em; // 960px
+$breakpoint: 57.5em;
 
 nav {
 	&.mobile-navigation {
@@ -31,6 +29,9 @@ nav {
 						font-size: 20px;
 						letter-spacing: -0.025rem;
 						line-height: 20px;
+						&.booking {
+							font-style: normal;
+						}
 					}
 				}
 			}
@@ -71,7 +72,7 @@ nav {
 	min-width: 320px;
 	background-color: #fafafa;
 	font-size: 0;
-	@media only screen and (max-width: $breakpoint-small) {
+	@media only screen and (max-width: $breakpoint) {
 		padding-left: 2%;
 		padding-right: 2%;
 		width: 96%;
@@ -79,13 +80,13 @@ nav {
 	.block {
 		display: inline-block;
 		vertical-align: top;
-		width: 270px;
-		@media only screen and (max-width: $breakpoint-small) {
+		width: 250px;
+		@media only screen and (max-width: $breakpoint) {
 			width: 210px;
 		}
 		&:first-of-type {
-			width: calc(100% - 270px);
-			@media only screen and (max-width: $breakpoint-small) {
+			width: calc(100% - 250px);
+			@media only screen and (max-width: $breakpoint) {
 				width: calc(100% - 210px);
 			}
 		}
@@ -96,10 +97,10 @@ nav {
 		padding-top: 31px;
 		padding-bottom: 31px;
 		vertical-align: top;
-		@media only screen and (max-width: $breakpoint-med) {
+		@media only screen and (max-width: $breakpoint) {
 			display: inline-block;
 		}
-		@media only screen and (max-width: $breakpoint-small) {
+		@media only screen and (max-width: $breakpoint) {
 			padding-top: 21px;
 			padding-bottom: 21px;
 		}
@@ -114,7 +115,7 @@ nav {
 	}
 	.site-branding {
 		display: inline-block;
-		@media only screen and (max-width: $breakpoint-small) {
+		@media only screen and (max-width: $breakpoint) {
 			padding-left: 0;
 		}
 		.logo {
@@ -122,7 +123,7 @@ nav {
 			padding-bottom: 10px;
 			img {
 				height: 60px;
-				@media only screen and (max-width: $breakpoint-small) {
+				@media only screen and (max-width: $breakpoint) {
 					height: 40px;
 				}
 			}
@@ -134,7 +135,7 @@ nav {
 		padding-top: 30px;
 		padding-bottom: 30px;
 		padding-left: 2vw;
-		@media only screen and (max-width: $breakpoint-med) {
+		@media only screen and (max-width: $breakpoint) {
 			display: none;
 		}
 		ul {
@@ -143,7 +144,7 @@ nav {
 			li {
 				display: inline-block;
 				list-style: none;
-				margin-right: 1vw;
+				margin-right: 10px;
 				&:last-of-type {
 					margin-right: 0;
 				}
@@ -156,18 +157,30 @@ nav {
 					letter-spacing: -0.025rem;
 					line-height: 20px;
 					transition: all 0.5s;
-					&:hover {
-						color: #1f1e2c;
+					&.booking {
+						margin-left: 15px;
+						color: #f57f17;
+						font-size: 15px;
+						font-style: normal;
+						border-bottom: solid 1px #f57f17;
+						&::after {
+							margin-left: 5px;
+							content: "→";
+						}
+						&:hover {
+							color: #1f1e2c;
+						}
 					}
 				}
 			}
 		}
 	}
 	.subscription {
+		display: inline-block;
 		padding-top: 25px;
 		padding-bottom: 25px;
 		text-align: right;
-		@media only screen and (max-width: $breakpoint-small) {
+		@media only screen and (max-width: $breakpoint) {
 			padding-top: 15px;
 			padding-bottom: 15px;
 		}
@@ -191,7 +204,7 @@ nav {
 				line-height: 16px;
 				&:focus {
 					width: 150px;
-					@media only screen and (max-width: $breakpoint-small) {
+					@media only screen and (max-width: $breakpoint) {
 						width: 90px;
 					}
 				}
